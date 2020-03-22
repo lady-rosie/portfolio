@@ -35,13 +35,56 @@ width: 85%;
   margin-left: 24px;
 }
 #project-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 50px;
   margin-left: 24px;
+
 }
 
 #project-header{
-
+  background: $light-green;
+  height: auto;
+  padding-top:16px;
+  padding-left:24px;
+  padding-right: 24px;
+  margin-right: 32px;
+  text-align: center;
+  h2{
+    font-size: 4rem;
+  }
 }
 #project-cards{
+  display: flex;
+  flex-direction: column;
+  a{
+    font-family: $headers-font;
+    &:hover{
+      color: white;
+    }
+  }
+}
 
+.project-card{
+  margin-bottom: 24px;
+  color: white;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  font-size: 32px;
+}
+.gb{
+  background-image: url('Greenthumb project.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.ca{
+  background-image: url('Cocktail advisor project.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.stell{
+  background-image: url('Stellactica-project.jpg');
+  background-size: cover;
+  background-position: center;
 }
