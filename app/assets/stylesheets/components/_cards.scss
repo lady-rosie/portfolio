@@ -3,9 +3,25 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 width: 85%;
+position: relative;
+}
+.download{
+  position: absolute;
+  top: 435px;
+  right: 350px;
+  img{
+    width: 200px;
+    filter: invert(97%) sepia(10%) saturate(356%) hue-rotate(64deg) brightness(93%) contrast(101%);
+  }
 }
 #presentation-header{
   display: flex;
+  a{
+    color: $header-color;
+    &:hover{
+      color: $body-color;
+    }
+  }
   h6{
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
@@ -15,6 +31,7 @@ width: 85%;
     font-size: 20px;
   }
 }
+
 #picture{
   background-image: url('photo-de-profile.jpg');
   background-size: cover;
@@ -34,6 +51,7 @@ width: 85%;
   margin-top: 100px;
   margin-left: 24px;
 }
+
 #project-section{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -70,21 +88,27 @@ width: 85%;
   color: white;
   width: 500px;
   height: 200px;
-  text-align: center;
-  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  p{
+    font-family: $body-font;
+    font-size:18px;
+  }
 }
 .gb{
-  background-image: url('Greenthumb project.jpg');
+  background-image:linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('Greenthumb project.jpg');
   background-size: cover;
   background-position: center;
 }
 .ca{
-  background-image: url('Cocktail advisor project.jpeg');
+  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('Cocktail advisor project.jpeg');
   background-size: cover;
   background-position: center;
 }
 .stell{
-  background-image: url('Stellactica-project.jpg');
+  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)), url('Stellactica-project.jpg');
   background-size: cover;
   background-position: center;
 }

@@ -1,13 +1,14 @@
 <div class="container">
   <div id="presentation">
     <div id="presentation-header">
-      <h6>Let's connect !</h6>
+      <a href="#" data-toggle="modal" data-target="#exampleModal"><h6>Let's connect !</h6></a>
+      <%= render 'contact' %>
       <div id="picture">
       </div>
     </div>
     <div class="informations">
       <h1>Hello, I’m Rose !</h1>
-      <p class="sub-title">Full stack developper</p>
+      <p class="sub-title">Full stack developer</p>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       when an unknown printer took.</p>
@@ -21,6 +22,9 @@
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
     when an unknown printer took.</p>
+    <div class="download">
+     <a href="<%= image_url'resume.pdf'%>" title="Download my resume" download><img src="<%= image_url'download.svg'%>"></a>
+    </div>
   </div>
   <div id="technical-skills">
     <h2>Things I know</h2>
@@ -50,11 +54,27 @@
       <h2>Projects</h2>
     </div>
     <div id="project-cards">
-      <a href="#" class="project-card gb">Green Thumb</a>
-      <a href="#" class="project-card ca">Cocktail Advisor</a>
-      <a href="#" class="project-card stell">Stellactica</a>
+      <%= link_to 'https://www.greenthumb.rocks/', target:"_blank" do %>
+        <div class="project-card gb">
+          <h3>Green Thumb</h3>
+          <p>The new way to manage your home garden!</p>
+        </div>
+      <% end %>
+      <%= link_to 'http://cocktailadvisor.herokuapp.com/cocktails', target:"_blank" do %>
+        <div class="project-card ca">
+          <h3>Cocktail Advisor</h3>
+          <p>Browse through our selection, read user reviews
+            and choose your next cocktail</p>
+        </div>
+      <% end %>
+      <%= link_to 'http://stella-erratica.herokuapp.com/', target:"_blank" do %>
+        <div class="project-card stell">
+        <h3>Stellactica</h3>
+        <p>Rent your planets to interstellar travelers</p>
+      </div>
+      <% end %>
       <div id="contact-info">
-        <a href="https://www.linkedin.com/in/rosegrondin/"><img src="<%= image_url'linkedin.svg'%>" alt=""></a>
+        <a href="https://www.linkedin.com/in/rosegrondin/" target=_blank><img src="<%= image_url'linkedin.svg'%>" alt=""></a>
         <p>(514) 659-1419</p>
         <p>rose.grondin@gmail.com</p>
       </div>

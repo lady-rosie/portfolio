@@ -1,0 +1,16 @@
+.btn-classic{
+  box-shadow: inset 0 22px 0 #fff, inset 0 35px 0 $light-green;
+  color: $body-color;
+  border: 0;
+  padding: 8px 16px;
+  transition: 0.4s;
+  &:hover{
+    box-shadow: inset 0 3px 0 #fff, inset 0 35px 0 $light-green;
+  }
+}
+button{
+  &:focus{
+    outline: 0;
+    border:none;
+  }
+}
