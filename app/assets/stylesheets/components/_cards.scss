@@ -159,5 +159,101 @@ position: relative;
   #contact-info{
     width: 100%;
   }
-
+}
+// iphone X, iphone 6/7/8
+@media (min-width: 300px) and (max-width: 410px) {
+  #picture{
+    width: 250px;
+    height: 400px;
+  }
+  #presentation{
+    width:100%;
+    display:grid;
+    grid-gap:16px;
+  }
+  .download {
+    top:733px;
+    right: 247px;
+    img{
+      width:70px;
+    }
+  }
+  .informations{
+    width:90%;
+    h1{
+      font-size: 2rem;
+    }
+  }
+  #project-section{
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin-left: 0px;
+  }
+  #project-header{
+    margin-right:0px;
+    h2{
+      font-size: 3rem;
+    }
+  }
+  #project-cards{
+    align-items:center;
+  }
+  .project-card{
+    width: 100%;
+  }
+  #contact-info{
+    width: 100%;
+    font-size: 13px;
+  }
+}
+// iphone Plus and Google pixel
+@media (min-width: 411px) and (max-width: 525px) {
+  #picture{
+    width: 250px;
+    height: 400px;
+  }
+  #presentation{
+    width:100%;
+    display:grid;
+    grid-gap:16px;
+  }
+  .download {
+    top:710px;
+    right: 290px;
+    img{
+      width:70px;
+    }
+  }
+  .informations{
+    width:90%;
+    h1{
+      font-size: 2rem;
+    }
+  }
+  #project-section{
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin-left: 0px;
+  }
+  #project-header{
+    margin-right:0px;
+    h2{
+      font-size: 3rem;
+    }
+  }
+  #project-cards{
+    align-items:center;
+  }
+  .project-card{
+    width: 100%;
+  }
+  #contact-info{
+    width: 100%;
+    font-size: 14px;
+    a{
+      img{
+        margin-bottom: 7px;
+      }
+    }
+  }
 }
