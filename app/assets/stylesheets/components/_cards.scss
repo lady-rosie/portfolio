@@ -112,3 +112,52 @@ position: relative;
   background-size: cover;
   background-position: center;
 }
+
+// Responsive design
+// ipad pro
+@media (min-width: 1024px) {
+  #presentation{
+    width:100%;
+  }
+  .download {
+    right: 181px;
+  }
+}
+// ipad
+@media (min-width: 768px) and (max-width: 1024px) {
+  #picture{
+    width: 250px;
+    height: 400px;
+  }
+  #presentation{
+    width:100%;
+  }
+  .download {
+    top:381px;
+    right: 185px;
+    img{
+      width:130px;
+    }
+  }
+  .informations{
+    width:90%;
+  }
+  #project-section{
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin-left: 0px;
+  }
+  #project-header{
+    margin-right:0px;
+  }
+  #project-cards{
+    align-items:center;
+  }
+  .project-card{
+    width: 659px;
+  }
+  #contact-info{
+    width: 100%;
+  }
+
+}
