@@ -40,7 +40,7 @@ position: relative;
 }
 
 #picture{
-  background-image: url('photo-de-profile.jpg');
+  background-image: url('https://res.cloudinary.com/dqld2goyf/image/upload/v1585345394/portfolio/photo_de_profil.jpg');
   background-size: cover;
   background-position: center;
   width: 350px;
@@ -105,17 +105,17 @@ position: relative;
   }
 }
 .gb{
-  background-image:linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('Greenthumb project.jpg');
+  background-image:linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('https://res.cloudinary.com/dqld2goyf/image/upload/v1585345415/portfolio/Greenthumb_project.jpg');
   background-size: cover;
   background-position: center;
 }
 .ca{
-  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('Cocktail advisor project.jpeg');
+  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)),url('https://res.cloudinary.com/dqld2goyf/image/upload/v1585345406/portfolio/Cocktail_advisor_project.jpg');
   background-size: cover;
   background-position: center;
 }
 .stell{
-  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)), url('Stellactica-project.jpg');
+  background-image: linear-gradient(rgba(42,73,51,0.3), rgba(42,73,51,0.3)), url('https://res.cloudinary.com/dqld2goyf/image/upload/v1585345414/portfolio/Stellactica-project.jpg');
   background-size: cover;
   background-position: center;
 }
