@@ -1,0 +1,9 @@
+<div class="contact-form">
+    <%= simple_form_for @message, url: root_path do |f| %>
+      <%= f.input :name, label: "name:"%>
+      <%= f.input :email, label: "email :" %>
+      <%= f.input :content, as: :text, label: "message :" %>
+      <%= f.button :submit, 'Send', class: "btn-classic" %>
+    <% end %>
+</div>
+
