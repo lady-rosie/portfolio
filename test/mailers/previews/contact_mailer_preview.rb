@@ -2,7 +2,7 @@
 class ContactMailerPreview < ActionMailer::Preview
 
   def contact
-    message = Message.first
+    message = Message.last
     ContactMailer.contact(message)
   end
 
