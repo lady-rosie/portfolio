@@ -9,12 +9,11 @@ class MessagesController < ApplicationController
     if @message.valid?
       @message.save
       ContactMailer.contact(@message).deliver_now
-      redirect_to root_path
       flash[:notice] = "message successfully sent!"
     else
       flash[:notice] = "something went wrong :("
-      # render :new
     end
+    redirect_to root_path
   end
 
   private
