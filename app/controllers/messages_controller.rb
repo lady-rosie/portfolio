@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
       flash[:notice] = "message successfully sent!"
     else
       flash[:notice] = "something went wrong :("
-      render :new
+      # render :new
     end
   end
 
